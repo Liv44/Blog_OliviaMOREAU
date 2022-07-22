@@ -26,7 +26,7 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      bg={useColorModeValue("grey.50", "whiteAlpha.100")}
       rounded={"full"}
       w={8}
       h={8}
@@ -39,7 +39,7 @@ const SocialButton = ({
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+        bg: useColorModeValue("grey.100", "whiteAlpha.200"),
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -51,7 +51,7 @@ const SocialButton = ({
 export default function Footer() {
   return (
     <Box
-      bg={useColorModeValue("green.50", "green.900")}
+      bg={useColorModeValue("green.400", "green.900")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Container
@@ -73,7 +73,7 @@ export default function Footer() {
       <Box
         borderTopWidth={1}
         borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.700")}
+        borderColor={useColorModeValue("gray.700", "gray.700")}
       >
         <Container
           as={Stack}

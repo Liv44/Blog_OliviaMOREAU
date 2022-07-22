@@ -78,6 +78,10 @@ export default function Navbar() {
             fontWeight={400}
             variant={"outline"}
             href={"/contact"}
+            colorScheme={"blue"}
+            _hover={{
+              background: "white",
+            }}
           >
             Contact
           </Button>
