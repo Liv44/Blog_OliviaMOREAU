@@ -1,12 +1,21 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import * as React from "react";
-import { Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import Hero from "../components/general/Hero/Hero";
+import { pageData } from "./api/data";
 
 const Home: NextPage = () => {
-  return <div>Accueil</div>;
+  return (
+    <Box>
+      <Hero
+        subTitle={pageData.hero.subtitle}
+        title={pageData.hero.title}
+        descriptions={pageData.hero.descriptions}
+        buttons={pageData.hero.buttons}
+        vector={pageData.hero.vector}
+      ></Hero>
+    </Box>
+  );
 };
 
 export default Home;
