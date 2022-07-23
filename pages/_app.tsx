@@ -4,7 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import "@fontsource/fraunces";
 import "@fontsource/open-sans";
 import { theme } from "../theme/index";
-import Layout from "../components/layout/layout";
+import Layout from "../components/general/layout/layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
