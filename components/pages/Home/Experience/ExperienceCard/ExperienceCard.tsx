@@ -5,7 +5,7 @@ interface ExperienceCardProps {
   title: string;
   company: string;
   dates: string;
-  competences: string[];
+  competences: string;
   missions: string[];
 }
 
@@ -32,10 +32,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
         ))}
       </UnorderedList>
 
-      <Text>
-        Compétences acquises :{" "}
-        {competences.map((competence, index) => competence + ", ")}
-      </Text>
+      <Text>Compétences acquises : {competences}</Text>
     </Box>
   );
 };
