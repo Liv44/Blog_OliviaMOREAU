@@ -3,17 +3,13 @@ import * as React from "react";
 import { Box } from "@chakra-ui/react";
 import Hero from "../components/general/Hero/Hero";
 import { pageData } from "./api/data";
+import ExperiencesList from "../components/pages/Home/ExperienceList";
 
 const Home: NextPage = () => {
   return (
     <Box>
-      <Hero
-        subTitle={pageData.hero.subtitle}
-        title={pageData.hero.title}
-        descriptions={pageData.hero.descriptions}
-        buttons={pageData.hero.buttons}
-        vector={pageData.hero.vector}
-      ></Hero>
+      <Hero {...pageData.hero}></Hero>
+      <ExperiencesList experiences={pageData.experiences}></ExperiencesList>
     </Box>
   );
 };

@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { FC } from "react";
 
-interface HeroProps {
+export interface HeroProps {
   subTitle?: string;
   title?: string;
   descriptions?: string[];
