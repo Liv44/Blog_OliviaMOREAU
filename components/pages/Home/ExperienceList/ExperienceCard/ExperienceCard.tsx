@@ -32,8 +32,9 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
       bg="white"
       w="100%"
       h="100%"
-      borderRadius={"md"}
+      borderRadius={25}
       p="5"
+      boxShadow={"lg"}
     >
       <Container>
         <Heading size="md">{title}</Heading>
