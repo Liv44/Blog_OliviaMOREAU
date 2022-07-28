@@ -1,9 +1,13 @@
+import { FC } from "react";
 import Photo from "../../assets/photo";
 import { HeroProps } from "../../components/general/Hero/Hero";
+import { TabProps } from "../../components/general/Tabs";
+import Title from "../../components/general/Title";
 import { ExperienceCardProps } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
 interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
+  scolarite: TabProps[];
 }
 export const pageData: pageDataInterface = {
   hero: {
@@ -86,6 +90,23 @@ export const pageData: pageDataInterface = {
       dates: "à partir de septembre 2022",
       missions: ["à venir..."],
       competences: "à venir...",
+    },
+  ],
+  scolarite: [
+    {
+      headerTitle: "Baccalauréat en informatique",
+      //Changer pour autre composant
+      content: Title({ title: "3 ans", subTitle: "J'apprends bcp lol" }),
+    },
+    {
+      headerTitle: "Licence Information Communication",
+      //Changer pour autre composant
+      content: Title({ title: "Test", subTitle: "test" }),
+    },
+    {
+      headerTitle: "Master Expert Informatique",
+      //Changer pour autre composant
+      content: Title({ title: "Test", subTitle: "test" }),
     },
   ],
 };
