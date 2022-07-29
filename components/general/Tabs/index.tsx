@@ -13,11 +13,11 @@ const TabsComponent: FC<TabsProps> = ({ tabs }) => {
   return (
     <Tabs
       m={12}
-      colorScheme={"orange.500"}
+      colorScheme={"blue.500"}
       variant="enclosed"
       isFitted
       border={"1px"}
-      borderColor="orange.500"
+      borderColor="blue.500"
       borderRadius={20}
       bg={"white"}
       boxShadow="lg"
@@ -27,7 +27,7 @@ const TabsComponent: FC<TabsProps> = ({ tabs }) => {
           <Tab
             _selected={{
               color: "white",
-              bg: "orange.500",
+              bg: "blue.500",
             }}
             borderTopLeftRadius={18}
             borderTopRightRadius={18}
