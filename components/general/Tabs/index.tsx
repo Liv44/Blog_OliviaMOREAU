@@ -25,8 +25,14 @@ const TabsComponent: FC<TabsProps> = ({ tabs }) => {
       <TabList>
         {tabs.map((tab) => (
           <Tab
-            _selected={{ color: "white", bg: "orange.500" }}
+            _selected={{
+              color: "white",
+              bg: "orange.500",
+            }}
+            borderTopLeftRadius={18}
+            borderTopRightRadius={18}
             key={tab.headerTitle}
+            fontSize={"xs"}
           >
             {tab.headerTitle}
           </Tab>
