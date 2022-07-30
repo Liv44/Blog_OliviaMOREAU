@@ -1,9 +1,11 @@
 import Photo from "../../assets/photo";
 import { HeroProps } from "../../components/general/Hero/Hero";
 import { ExperienceCardProps } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
+import { ScolariteCardProps } from "../../components/pages/Home/ScolariteCard";
 interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
+  scolarite: ScolariteCardProps;
 }
 export const pageData: pageDataInterface = {
   hero: {
@@ -88,4 +90,13 @@ export const pageData: pageDataInterface = {
       competences: "à venir...",
     },
   ],
+  scolarite: {
+    etablissement: "Université Catholique de Nantes",
+    dates: "Septembre 2018 - Janvier 2020",
+    descriptions: [
+      "Découverte des techniques de communication : pratique en audiovisuel - journalisme - développement web - réalisation de dossiers",
+      "Cette licence m’a permis de découvrir le développement web grâce aux modules HTML/CSS et JS. En seconde année, j’ai décidé de prendre l’option PPE+ Web (Projet Professionnel Étudiant) pour pouvoir approfondir mes connaissances dans le domaine du web.",
+      "J’ai décidé d’arrêter ma licence au cours de la seconde année car mon projet professionnel s’est dirigé vers le développement web plutôt que la communication.",
+    ],
+  },
 };
