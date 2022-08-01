@@ -1,7 +1,13 @@
+import { TabListProps, TabsProps } from "@chakra-ui/react";
 import Photo from "../../assets/photo";
 import { HeroProps } from "../../components/general/Hero/Hero";
-import { ExperienceCardProps } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
-import { ScolariteCardProps } from "../../components/pages/Home/ScolariteCard";
+import { TabProps } from "../../components/general/Tabs";
+import ExperienceCard, {
+  ExperienceCardProps,
+} from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
+import ScolariteCard, {
+  ScolariteCardProps,
+} from "../../components/pages/Home/ScolariteComponent/ScolariteCard";
 interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
@@ -25,7 +31,7 @@ export const pageData: pageDataInterface = {
         link: "/projets",
       },
     ],
-    vector: Photo,
+    lienImage: "/profile_picture.png",
   },
   experiences: [
     {

@@ -12,7 +12,7 @@ export interface TabProps {
 const TabsComponent: FC<TabsProps> = ({ tabs }) => {
   return (
     <Tabs
-      m={12}
+      m={3}
       colorScheme={"blue.500"}
       variant="enclosed"
       isFitted
@@ -21,6 +21,7 @@ const TabsComponent: FC<TabsProps> = ({ tabs }) => {
       borderRadius={20}
       bg={"white"}
       boxShadow="lg"
+      width={{ base: "xs", lg: "lg", md: "2xl" }}
     >
       <TabList>
         {tabs.map((tab) => (

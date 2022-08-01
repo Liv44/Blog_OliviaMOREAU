@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { FC } from "react";
 
 export interface ScolariteCardProps {
@@ -13,11 +13,14 @@ const ScolariteCard: FC<ScolariteCardProps> = ({
   descriptions,
 }) => {
   return (
-    <Box>
-      <Flex fontSize="md" gap={"1"}>
-        <Text fontWeight={"bold"}>Établissement : </Text>
-        <Text> {etablissement}</Text>
-      </Flex>
+    <Flex
+      width={{ base: "xs", lg: "lg", md: "2xl" }}
+      gap={3}
+      direction="column"
+    >
+      <Text width="xs" fontSize={{ base: "sm", md: "md" }} fontWeight={"bold"}>
+        {etablissement}
+      </Text>
       <Text color="orange.500" fontStyle={"italic"}>
         {dates}
       </Text>
@@ -25,10 +28,9 @@ const ScolariteCard: FC<ScolariteCardProps> = ({
         descriptions.map((desc, index) => (
           <>
             <Text key={index}>{desc}</Text>
-            <br />
           </>
         ))}
-    </Box>
+    </Flex>
   );
 };
 

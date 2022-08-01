@@ -6,6 +6,7 @@ import {
   Heading,
   Text,
   Button,
+  Image,
 } from "@chakra-ui/react";
 import { FC } from "react";
 
@@ -14,14 +15,14 @@ export interface HeroProps {
   title?: string;
   descriptions?: string[];
   buttons: { label: string; link: string }[];
-  vector: () => JSX.Element;
+  lienImage: string;
 }
 const Hero: FC<HeroProps> = ({
   subTitle,
   title,
   buttons,
   descriptions,
-  vector,
+  lienImage,
 }) => {
   return (
     <Container maxW={"7xl"}>
@@ -84,10 +85,7 @@ const Hero: FC<HeroProps> = ({
           position={"relative"}
           w={"full"}
         >
-          <Box>
-            {vector()}
-            {/* Ajouter le vecteur souhaité */}
-          </Box>
+          <Image src={lienImage} alt="Photo de Olivia MOREAU"></Image>
         </Flex>
       </Stack>
     </Container>
