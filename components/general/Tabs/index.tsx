@@ -24,7 +24,7 @@ const TabsComponent: FC<TabsProps> = ({ tabs }) => {
       width={{ base: "xs", lg: "lg", md: "2xl" }}
     >
       <TabList>
-        {tabs.map((tab) => (
+        {tabs.map((tab, index) => (
           <Tab
             _selected={{
               color: "white",
@@ -32,7 +32,7 @@ const TabsComponent: FC<TabsProps> = ({ tabs }) => {
             }}
             borderTopLeftRadius={18}
             borderTopRightRadius={18}
-            key={tab.headerTitle}
+            key={index}
             fontSize={"xs"}
           >
             {tab.headerTitle}
@@ -41,8 +41,8 @@ const TabsComponent: FC<TabsProps> = ({ tabs }) => {
       </TabList>
 
       <TabPanels>
-        {tabs.map((tab) => (
-          <TabPanel key={tab.headerTitle}>{tab.content}</TabPanel>
+        {tabs.map((tab, index) => (
+          <TabPanel key={index}>{tab.content}</TabPanel>
         ))}
       </TabPanels>
     </Tabs>

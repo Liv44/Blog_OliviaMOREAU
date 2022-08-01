@@ -1,7 +1,5 @@
-import { TabListProps, TabsProps } from "@chakra-ui/react";
-import Photo from "../../assets/photo";
 import { HeroProps } from "../../components/general/Hero/Hero";
-import { TabProps } from "../../components/general/Tabs";
+import { TabsProps } from "../../components/general/Tabs";
 import ExperienceCard, {
   ExperienceCardProps,
 } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
@@ -11,7 +9,7 @@ import ScolariteCard, {
 interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
-  scolarite: ScolariteCardProps;
+  scolarite: TabsProps;
 }
 export const pageData: pageDataInterface = {
   hero: {
@@ -97,12 +95,27 @@ export const pageData: pageDataInterface = {
     },
   ],
   scolarite: {
-    etablissement: "Université Catholique de Nantes",
-    dates: "Septembre 2018 - Janvier 2020",
-    descriptions: [
-      "Découverte des techniques de communication : pratique en audiovisuel - journalisme - développement web - réalisation de dossiers",
-      "Cette licence m’a permis de découvrir le développement web grâce aux modules HTML/CSS et JS. En seconde année, j’ai décidé de prendre l’option PPE+ Web (Projet Professionnel Étudiant) pour pouvoir approfondir mes connaissances dans le domaine du web.",
-      "J’ai décidé d’arrêter ma licence au cours de la seconde année car mon projet professionnel s’est dirigé vers le développement web plutôt que la communication.",
+    tabs: [
+      {
+        headerTitle: "Licence Information Communication",
+        content: ScolariteCard({
+          etablissement: "Université catholique de l'Ouest - Angers (49)",
+          dates: "septembre 2018 - janvier 2020",
+          descriptions: [
+            "J'ai commencé une licence d'Information Communication après mon Bac",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+          ],
+        }),
+      },
+      {
+        headerTitle: "Bachelor Informatique",
+        content: ScolariteCard({
+          etablissement: "Nantes Ynov Campus - Nantes (44)",
+          dates: "septembre 2020 - septembre 2023",
+          descriptions: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
+        }),
+      },
     ],
   },
 };

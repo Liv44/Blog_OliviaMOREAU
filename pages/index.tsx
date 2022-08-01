@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     <Box>
       <Hero {...pageData.hero}></Hero>
       <ExperiencesList experiences={pageData.experiences}></ExperiencesList>
-      <ScolariteComponent></ScolariteComponent>
+      <ScolariteComponent {...pageData.scolarite}></ScolariteComponent>
     </Box>
   );
 };

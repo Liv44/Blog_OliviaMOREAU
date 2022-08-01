@@ -1,28 +1,8 @@
 import { Box, Flex, HStack, Image, Stack } from "@chakra-ui/react";
 import { FC } from "react";
-import TabsComponent from "../../../general/Tabs";
-import ScolariteCard from "./ScolariteCard";
+import TabsComponent, { TabsProps } from "../../../general/Tabs";
 
-const data = [
-  {
-    headerTitle: "Licence Information Communication",
-    content: ScolariteCard({
-      etablissement: "Université catholique de l'Ouest - Angers (49)",
-      dates: "septembre 2018 - janvier 2020",
-      descriptions: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
-    }),
-  },
-  {
-    headerTitle: "Bachelor Informatique",
-    content: ScolariteCard({
-      etablissement: "Nantes Ynov Campus - Nantes (44)",
-      dates: "septembre 2020 - septembre 2023",
-      descriptions: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
-    }),
-  },
-];
-
-const ScolariteComponent: FC = () => {
+const ScolariteComponent: FC<TabsProps> = ({ tabs }) => {
   return (
     <Flex
       direction={{ base: "column", md: "column", lg: "row" }}
@@ -38,7 +18,7 @@ const ScolariteComponent: FC = () => {
         alt="education—Image"
       ></Image>
 
-      <TabsComponent tabs={data}></TabsComponent>
+      <TabsComponent tabs={tabs}></TabsComponent>
     </Flex>
   );
 };

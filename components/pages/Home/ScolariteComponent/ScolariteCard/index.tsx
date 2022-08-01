@@ -26,9 +26,9 @@ const ScolariteCard: FC<ScolariteCardProps> = ({
       </Text>
       {descriptions &&
         descriptions.map((desc, index) => (
-          <>
-            <Text key={index}>{desc}</Text>
-          </>
+          <Text width="md" textAlign={"justify"} key={index}>
+            {desc}
+          </Text>
         ))}
     </Flex>
   );

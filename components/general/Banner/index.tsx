@@ -25,16 +25,10 @@ const Banner: FC<BannerProps> = ({ title, blocs, color }) => {
         justify={{ base: "center", md: "space-around" }}
       >
         {blocs.map((bloc, index) => (
-          <>
-            <VStack w={"md"}>
-              <Heading size="md" key={index}>
-                {bloc.title}
-              </Heading>
-              <Text textAlign="center" key={index}>
-                {bloc.description}
-              </Text>
-            </VStack>
-          </>
+          <VStack key={index} w={"md"}>
+            <Heading size="md">{bloc.title}</Heading>
+            <Text textAlign="center">{bloc.description}</Text>
+          </VStack>
         ))}
       </Stack>
     </Stack>

@@ -44,17 +44,14 @@ const Hero: FC<HeroProps> = ({
             <Text>{title}</Text>
           </Heading>
 
-          <Text color={"gray.500"}>
+          <Flex direction="column" gap={5}>
             {descriptions &&
-              descriptions.map((desc) => (
-                <>
+              descriptions.map((desc, index) => (
+                <Text key={index} color={"gray.500"}>
                   {desc}
-                  <br />
-                  <br />
-                </>
+                </Text>
               ))}
-          </Text>
-
+          </Flex>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
