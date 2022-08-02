@@ -15,8 +15,8 @@ const ScolariteCard: FC<ScolariteCardProps> = ({
   descriptions,
 }) => {
   return (
-    <Flex gap={3} direction="column">
-      <Heading fontWeight={"bold"} textAlign="center">
+    <Flex gap={3} direction="column" fontSize="sm">
+      <Heading fontWeight={"bold"} as="h2" fontSize="md" textAlign="center">
         {formation}
       </Heading>
       <Flex direction={{ base: "column" }}>
