@@ -1,32 +1,35 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import { FC } from "react";
 
 export interface ScolariteCardProps {
+  formation: string;
   etablissement: string;
   dates: string;
   descriptions: string[];
 }
 
 const ScolariteCard: FC<ScolariteCardProps> = ({
+  formation,
   etablissement,
   dates,
   descriptions,
 }) => {
   return (
-    <Flex
-      width={{ base: "xs", lg: "lg", md: "2xl" }}
-      gap={3}
-      direction="column"
-    >
-      <Text width="xs" fontSize={{ base: "sm", md: "md" }} fontWeight={"bold"}>
-        {etablissement}
-      </Text>
-      <Text color="orange.500" fontStyle={"italic"}>
-        {dates}
-      </Text>
+    <Flex gap={3} direction="column">
+      <Heading fontWeight={"bold"} textAlign="center">
+        {formation}
+      </Heading>
+      <Flex direction={{ base: "column" }}>
+        <Text color="gray.600" fontStyle={"italic"}>
+          {etablissement}
+        </Text>
+        <Text color="orange.500" fontStyle={"italic"}>
+          {dates}
+        </Text>
+      </Flex>
       {descriptions &&
         descriptions.map((desc, index) => (
-          <Text width="md" textAlign={"justify"} key={index}>
+          <Text textAlign={"justify"} key={index}>
             {desc}
           </Text>
         ))}
