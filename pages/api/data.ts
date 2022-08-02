@@ -3,6 +3,7 @@ import { TabsProps } from "../../components/general/Tabs";
 import ExperienceCard, {
   ExperienceCardProps,
 } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
+import { HobbieProp } from "../../components/pages/Home/HobbiesComponent";
 import ScolariteCard, {
   ScolariteCardProps,
 } from "../../components/pages/Home/ScolariteComponent/ScolariteCard";
@@ -10,6 +11,7 @@ interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
   scolarite: TabsProps;
+  hobbies: HobbieProp[];
 }
 export const pageData: pageDataInterface = {
   hero: {
@@ -124,4 +126,18 @@ export const pageData: pageDataInterface = {
       },
     ],
   },
+  hobbies: [
+    {
+      title: "Théâtre",
+      description:
+        "Je suis une comédienne et je suis passionnée par la création de contenus pour les réseaux sociaux.",
+      competences: ["être un poussin", "faire cuicui", "lol"],
+    },
+    {
+      title: "Théâtre",
+      description:
+        "Je suis une comédienne et je suis passionnée par la création de contenus pour les réseaux sociaux.",
+      competences: ["être un poussin", "faire cuicui", "lol"],
+    },
+  ],
 };
