@@ -14,7 +14,7 @@ const Title: FC<TitleProps> = ({ title, subTitle }) => {
         fontSize={"lg"}
         textAlign={"center"}
         color={"orange.500"}
-        w={{ base: "md", lg: "xl" }}
+        w={{ base: "xs", lg: "xl" }}
       >
         {subTitle}
       </Text>

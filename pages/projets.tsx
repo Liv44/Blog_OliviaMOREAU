@@ -1,7 +1,8 @@
+import { Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
 
 const Projets: NextPage = () => {
-  return <div>Projets</div>;
+  return <Box>Projets</Box>;
 };
 
 export default Projets;

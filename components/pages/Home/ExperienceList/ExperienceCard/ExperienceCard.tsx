@@ -1,6 +1,5 @@
 import {
   Box,
-  Container,
   Flex,
   Heading,
   ListItem,
@@ -36,15 +35,13 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
       p="5"
       boxShadow={"lg"}
     >
-      <Container>
+      <Box>
         <Heading size="md">{title}</Heading>
         <Text fontSize="sm">{company}</Text>
         <Text fontSize="sm" color="orange.500" fontStyle={"italic"}>
           {dates}
         </Text>
-        <Text fontSize="sm">
-          Missions :<Text></Text>
-        </Text>
+        <Text fontSize="sm">Missions :</Text>
         <UnorderedList pl="4">
           {missions.map((mission, index) => (
             <ListItem fontSize="sm" key={index}>
@@ -52,7 +49,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
             </ListItem>
           ))}
         </UnorderedList>
-      </Container>
+      </Box>
       <Text fontSize="sm">Compétences acquises : {competences}</Text>
     </Flex>
   );

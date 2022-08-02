@@ -1,9 +1,15 @@
-import Photo from "../../assets/photo";
 import { HeroProps } from "../../components/general/Hero/Hero";
-import { ExperienceCardProps } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
+import { TabsProps } from "../../components/general/Tabs";
+import ExperienceCard, {
+  ExperienceCardProps,
+} from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
+import ScolariteCard, {
+  ScolariteCardProps,
+} from "../../components/pages/Home/ScolariteComponent/ScolariteCard";
 interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
+  scolarite: TabsProps;
 }
 export const pageData: pageDataInterface = {
   hero: {
@@ -23,7 +29,7 @@ export const pageData: pageDataInterface = {
         link: "/projets",
       },
     ],
-    vector: Photo,
+    lienImage: "/profile_picture.png",
   },
   experiences: [
     {
@@ -88,4 +94,34 @@ export const pageData: pageDataInterface = {
       competences: "à venir...",
     },
   ],
+  scolarite: {
+    tabs: [
+      {
+        headerTitle: "Licence Information Communication",
+        content: ScolariteCard({
+          formation: "Licence Information Communication",
+          etablissement: "Université catholique de l'Ouest - Angers (49)",
+          dates: "septembre 2018 - janvier 2020",
+          descriptions: [
+            "Découverte des techniques de communication : pratique en audiovisuel - journalisme - développement web - réalisation de dossiers",
+            "Cette licence m’a permis de découvrir le développement web grâce aux modules HTML/CSS et JS. En seconde année, j’ai décidé de prendre l’option PPE+ Web (Projet Professionnel Étudiant) pour pouvoir approfondir mes connaissances dans le domaine du web.",
+            "J’ai décidé d’arrêter ma licence au cours de la seconde année car mon projet professionnel s’est dirigé vers le développement web plutôt que la communication.",
+          ],
+        }),
+      },
+      {
+        headerTitle: "Bachelor Informatique",
+        content: ScolariteCard({
+          formation: "Bachelor Informatique",
+          etablissement: "Nantes Ynov Campus - Nantes (44)",
+          dates: "septembre 2020 - septembre 2023",
+          descriptions: [
+            "Enseignement de base de l'informatique. Réalisation de différents projets avec différents langages. J'y apprends l'algorithmie, la structure d'un code, les bonnes pratiques, la gestion de différents outils de développement.",
+            "J'ai choisi l'école Ynov car elle propose une formation axée sur les projets. J'ai pu apprendre le travail d'équipe et la gestion de projets. Je me spéciie en 3ème année avec l'option développement.",
+            "À la suite de mon Bachelor, je souahite continuer vers un Master Expert Informatique et Sciences de l'Information.",
+          ],
+        }),
+      },
+    ],
+  },
 };
