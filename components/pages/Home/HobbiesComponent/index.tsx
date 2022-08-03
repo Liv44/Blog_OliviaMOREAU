@@ -1,13 +1,20 @@
 import {
   Button,
+  Container,
   Divider,
   Flex,
   Heading,
+  Icon,
   Image,
+  SimpleGrid,
   Stack,
+  StackDivider,
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
+
+import { StarFilled, StarOutlined } from "@ant-design/icons";
+
 import { FC } from "react";
 
 interface HobbiesProps {
@@ -19,47 +26,48 @@ export interface HobbieProp {
   competences: string[];
 }
 
+const Hobby: FC<HobbieProp> = ({ title, description, competences }) => {
+  return (
+    <Stack spacing={4}>
+      <Flex gap={3} alignItems="center">
+        <Icon as={StarFilled} color={"green.400"}></Icon>
+        <Heading fontSize={"xl"}>{title}</Heading>
+      </Flex>
+      <Text fontSize={"md"}>{description}</Text>
+      <Text fontSize={"sm"} color={"gray.500"}>
+        COMPÉTENCES: {competences.join(", ")}
+      </Text>
+    </Stack>
+  );
+};
+
 const Hobbies: FC<HobbiesProps> = ({ hobbies }) => {
   return (
-    <Stack
-      h={"lg"}
-      //   maxH={"70vh"}
-      direction={{ base: "column", md: "row" }}
-      justifyContent="space-between"
-      alignItems={"space-between"}
-    >
-      <Flex p={8} flex={1} align={"center"} justify={"center"}>
-        <Stack spacing={6} w={"full"} maxW={"lg"}>
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-            <Text as={"span"} position={"relative"}>
-              Mes Passions
-            </Text>
-          </Heading>
-          {hobbies.map((hobby) => {
-            console.log(hobby);
-            return (
-              <Stack spacing={8} key={hobby.title}>
-                <Heading fontSize={"xl"}>{hobby.title}</Heading>
-                <Text>{hobby.description}</Text>
-                <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-                  COMPÉTENCES : {hobby.competences.join(", ")}
-                </Text>
-                <Divider />
-              </Stack>
-            );
-          })}
+    <Container maxW={"6xl"} py={12}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} alignItems="center">
+        <Stack spacing={4}>
+          <Heading>Mes passions</Heading>
+          <Stack
+            spacing={4}
+            divider={<StackDivider borderColor={"green.500"} />}
+          >
+            {hobbies.map((hobby, index) => {
+              return <Hobby key={index} {...hobby}></Hobby>;
+            })}
+          </Stack>
         </Stack>
-      </Flex>
-      <Flex flex={1}>
-        <Image
-          h={"auto"}
-          w={"full"}
-          alt={"Login Image"}
-          objectFit={"cover"}
-          src={"./olivia_poussin.png"}
-        />
-      </Flex>
-    </Stack>
+        <Flex alignItems={"center"} justifyContent="center">
+          <Image
+            width={useBreakpointValue({ base: "75%", md: "100%" })}
+            alignSelf="center"
+            rounded={"md"}
+            alt={"feature image"}
+            src={"./olivia_poussin.png"}
+            objectFit={"cover"}
+          />
+        </Flex>
+      </SimpleGrid>
+    </Container>
   );
 };
 
