@@ -130,14 +130,14 @@ export const pageData: pageDataInterface = {
     {
       title: "Théâtre",
       description:
-        "Je suis une comédienne et je suis passionnée par la création de contenus pour les réseaux sociaux.",
-      competences: ["être un poussin", "faire cuicui", "lol"],
+        "Depuis plus de 10 ans, je suis comédienne amatrice dans la troupe Kiproko à Valanjou. J’ai aussi été animatrice de groupes d’enfants pendant 5 ans et membre du bureau en tant que chargée de communication.",
+      competences: ["mémorisation", "lâcher prise", "confiance en soit"],
     },
     {
-      title: "Théâtre",
+      title: "Musique",
       description:
-        "Je suis une comédienne et je suis passionnée par la création de contenus pour les réseaux sociaux.",
-      competences: ["être un poussin", "faire cuicui", "lol"],
+        "Pendant 10 ans, j'ai suivi des cours de saxophone. J'ai fait partie de l'orchestre d'harmonie de Chemillé-en-Anjou pendant 4 ans. J'apprends aussi en autoditacte le chant, le ukulélé et le kalimba. ",
+      competences: ["rigueur", "sens artistique", "travail collectif"],
     },
   ],
 };
