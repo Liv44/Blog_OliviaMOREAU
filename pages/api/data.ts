@@ -1,3 +1,5 @@
+import { CompetencesProps } from "../../components/general/Competences";
+import { CompetenceCardProps } from "../../components/general/Competences/CompetenceCard";
 import { HeroProps } from "../../components/general/Hero/Hero";
 import { TabsProps } from "../../components/general/Tabs";
 import ExperienceCard, {
@@ -12,7 +14,32 @@ interface pageDataInterface {
   experiences: ExperienceCardProps[];
   scolarite: TabsProps;
   hobbies: HobbieProp[];
+  competences: CompetenceCardProps[];
 }
+
+const competence1 = `
+##### Front-End
+
+* HTML-CSS-JavaScript
+* ReactJS - VueJS - AngularJS
+
+`;
+
+const competence2 = `
+##### Back-End
+PHP - MySQL - Java - C - C - Python - `;
+
+const competence3 = `
+
+##### Gestion de projets
+
+Github - Trello - Jira `;
+const competence4 = `
+
+##### Bases de données
+
+SQL - NoSQL - MongoDB - Firebase - `;
+
 export const pageData: pageDataInterface = {
   hero: {
     subTitle: "Étudiante, développeuse, comédienne...",
@@ -138,6 +165,20 @@ export const pageData: pageDataInterface = {
       description:
         "Pendant 10 ans, j'ai suivi des cours de saxophone. J'ai fait partie de l'orchestre d'harmonie de Chemillé-en-Anjou pendant 4 ans. J'apprends aussi en autoditacte le chant, le ukulélé et le kalimba. ",
       competences: ["rigueur", "sens artistique", "travail collectif"],
+    },
+  ],
+  competences: [
+    {
+      content: competence1,
+    },
+    {
+      content: competence2,
+    },
+    {
+      content: competence3,
+    },
+    {
+      content: competence4,
     },
   ],
 };
