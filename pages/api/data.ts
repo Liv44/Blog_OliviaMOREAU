@@ -3,6 +3,7 @@ import { TabsProps } from "../../components/general/Tabs";
 import ExperienceCard, {
   ExperienceCardProps,
 } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
+import { HobbieProp } from "../../components/pages/Home/HobbiesComponent";
 import ScolariteCard, {
   ScolariteCardProps,
 } from "../../components/pages/Home/ScolariteComponent/ScolariteCard";
@@ -10,6 +11,7 @@ interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
   scolarite: TabsProps;
+  hobbies: HobbieProp[];
 }
 export const pageData: pageDataInterface = {
   hero: {
@@ -124,4 +126,18 @@ export const pageData: pageDataInterface = {
       },
     ],
   },
+  hobbies: [
+    {
+      title: "Théâtre",
+      description:
+        "Depuis plus de 10 ans, je suis comédienne amatrice dans la troupe Kiproko à Valanjou. J’ai aussi été animatrice de groupes d’enfants pendant 5 ans et membre du bureau en tant que chargée de communication.",
+      competences: ["mémorisation", "lâcher prise", "confiance en soit"],
+    },
+    {
+      title: "Musique",
+      description:
+        "Pendant 10 ans, j'ai suivi des cours de saxophone. J'ai fait partie de l'orchestre d'harmonie de Chemillé-en-Anjou pendant 4 ans. J'apprends aussi en autoditacte le chant, le ukulélé et le kalimba. ",
+      competences: ["rigueur", "sens artistique", "travail collectif"],
+    },
+  ],
 };
