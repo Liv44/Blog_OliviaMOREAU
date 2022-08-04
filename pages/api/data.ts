@@ -47,8 +47,9 @@ export const pageData: pageDataInterface = {
     subTitle: "Étudiante, développeuse, comédienne...",
     title: "Mais qui est Liv' ?",
     descriptions: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iur numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iuriusto fuga praesentium",
-      "Je suis une comédienne et je suis passionnée par la création de contenus pour les réseaux sociaux.",
+      "Je suis Olivia MOREAU, 22 ans, jeune étudiante en 2ème année de Bachelor Informatique à Nantes Ynov Campus. Originaire du Maine-et-Loire, j’ai étudié 1 an et demi à Angers pour finalement arriver à Nantes en 2020.",
+      "Lorsque j’ai découvert le développement informatique, j’ai su que je voulais en faire mon projet professionnel à long terme. C’est l’algorthmie et la rigueur demandée qui m’a attiré et qui me plait encore aujourd’hui.",
+      "Ce blog/portfolio est un rendu demandé pour valider ma 2ème année. Vous y trouverez mon CV détaillé, une présentation de l’entreprise dans laquelle je travaille actuellement et un blog contenant des articles sur différents sujets liés au domaine que j’exerce.",
     ],
     buttons: [
       {
@@ -159,13 +160,13 @@ export const pageData: pageDataInterface = {
     {
       title: "Théâtre",
       description:
-        "Depuis plus de 10 ans, je suis comédienne amatrice dans la troupe Kiproko à Valanjou. J’ai aussi été animatrice de groupes d’enfants pendant 5 ans et membre du bureau en tant que chargée de communication.",
+        "Depuis plus de 10 ans, je suis comédienne amatrice dans la troupe Kiproko à Valanjou (49). J’ai aussi été animatrice de groupes d’enfants pendant 5 ans et membre du bureau en tant que chargée de communication.",
       competences: ["mémorisation", "lâcher prise", "confiance en soit"],
     },
     {
       title: "Musique",
       description:
-        "Pendant 10 ans, j'ai suivi des cours de saxophone. J'ai fait partie de l'orchestre d'harmonie de Chemillé-en-Anjou pendant 4 ans. J'apprends aussi en autoditacte le chant, le ukulélé et le kalimba. ",
+        "Pendant 10 ans, j'ai suivi des cours de saxophone. J'ai fait partie de l'orchestre d'harmonie de Chemillé-en-Anjou (49) pendant 4 ans. J'apprends aussi en autoditacte le chant, le ukulélé et le kalimba. ",
       competences: ["rigueur", "sens artistique", "travail collectif"],
     },
   ],
@@ -184,7 +185,7 @@ export const pageData: pageDataInterface = {
     },
   ],
   softskills: {
-    title: "Mes soft Skills",
+    title: "Mes Soft Skills",
     color: "orange.500",
     blocs: [
       {
