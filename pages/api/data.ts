@@ -1,5 +1,6 @@
 import { CompetencesProps } from "../../components/general/Competences";
 import { CompetenceCardProps } from "../../components/general/Competences/CompetenceCard";
+import { BannerProps } from "../../components/general/Banner";
 import { HeroProps } from "../../components/general/Hero/Hero";
 import { TabsProps } from "../../components/general/Tabs";
 import ExperienceCard, {
@@ -15,6 +16,7 @@ interface pageDataInterface {
   scolarite: TabsProps;
   hobbies: HobbieProp[];
   competences: CompetenceCardProps[];
+  softskills: BannerProps;
 }
 
 const competence1 = `
@@ -181,4 +183,30 @@ export const pageData: pageDataInterface = {
       content: competence4,
     },
   ],
+  softskills: {
+    title: "Mes soft Skills",
+    color: "orange.500",
+    blocs: [
+      {
+        title: "Empathie",
+        description:
+          "Je suis à l'écoute des gens autour de moi, et sais agir en fonction des émotions des autres. Le travail en équipe est donc agréable car je comprends rapidement les demandes et besoins des collègues.",
+      },
+      {
+        title: "Autonomie",
+        description:
+          "Je suis très autonome dans mon travail. J'arrive à travailler seule sur une tâche mais n'hésite pas à venir poser des questions si j'ai un problème de compréhension sur un élément.",
+      },
+      {
+        title: "Capacité d'apprentissage",
+        description:
+          "J'apprends très vite, ce qui me permet de découvrir des notions rapidement et de les appliquer directement. Je sais comprendre du code et le réutiliser en l'adaptant à ce que j'ai besoin.",
+      },
+      {
+        title: "Force de proposition",
+        description:
+          "Soucieuse de ce que je produis, je suis toujours prête à donner mon avis sur le travail à effectuer. J'aime aussi prendre le point de vue d'un utilisateur pour proposer des solutions adéquates.",
+      },
+    ],
+  },
 };

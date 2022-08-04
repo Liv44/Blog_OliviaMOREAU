@@ -1,7 +1,7 @@
 import { Heading, Text, VStack, Stack } from "@chakra-ui/react";
 import { FC } from "react";
 
-interface BannerProps {
+export interface BannerProps {
   title: string;
   blocs: { title: string; description: string }[];
   color: "orange.500" | "blue.500" | "green.500" | "red.500";
@@ -25,7 +25,7 @@ const Banner: FC<BannerProps> = ({ title, blocs, color }) => {
         justify={{ base: "center", md: "space-around" }}
       >
         {blocs.map((bloc, index) => (
-          <VStack key={index} w={"md"}>
+          <VStack key={index}>
             <Heading size="md">{bloc.title}</Heading>
             <Text textAlign="center">{bloc.description}</Text>
           </VStack>
