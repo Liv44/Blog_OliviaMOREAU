@@ -2,13 +2,12 @@ import { CompetencesProps } from "../../components/general/Competences";
 import { CompetenceCardProps } from "../../components/general/Competences/CompetenceCard";
 import { HeroProps } from "../../components/general/Hero/Hero";
 import { TabsProps } from "../../components/general/Tabs";
-import ExperienceCard, {
-  ExperienceCardProps,
-} from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
+import { BackEnd } from "../../components/pages/Home/CompetencesHome/BackEnd";
+import { FrontEnd } from "../../components/pages/Home/CompetencesHome/FrontEnd";
+import { Organisation } from "../../components/pages/Home/CompetencesHome/Organisation";
+import { ExperienceCardProps } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
 import { HobbieProp } from "../../components/pages/Home/HobbiesComponent";
-import ScolariteCard, {
-  ScolariteCardProps,
-} from "../../components/pages/Home/ScolariteComponent/ScolariteCard";
+import ScolariteCard from "../../components/pages/Home/ScolariteComponent/ScolariteCard";
 interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
@@ -16,29 +15,6 @@ interface pageDataInterface {
   hobbies: HobbieProp[];
   competences: CompetenceCardProps[];
 }
-
-const competence1 = `
-##### Front-End
-
-* HTML-CSS-JavaScript
-* ReactJS - VueJS - AngularJS
-
-`;
-
-const competence2 = `
-##### Back-End
-PHP - MySQL - Java - C - C - Python - `;
-
-const competence3 = `
-
-##### Gestion de projets
-
-Github - Trello - Jira `;
-const competence4 = `
-
-##### Bases de données
-
-SQL - NoSQL - MongoDB - Firebase - `;
 
 export const pageData: pageDataInterface = {
   hero: {
@@ -169,16 +145,13 @@ export const pageData: pageDataInterface = {
   ],
   competences: [
     {
-      content: competence1,
+      content: FrontEnd,
     },
     {
-      content: competence2,
+      content: BackEnd,
     },
     {
-      content: competence3,
-    },
-    {
-      content: competence4,
+      content: Organisation,
     },
   ],
 };

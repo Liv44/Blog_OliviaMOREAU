@@ -4,7 +4,7 @@ import { FC } from "react";
 import ReactMarkdown from "react-markdown";
 
 export interface CompetenceCardProps {
-  content: string;
+  content: FC<{}>;
   color?: "blue";
 }
 
@@ -19,9 +19,7 @@ const CompetenceCard: FC<CompetenceCardProps> = ({ content, color }) => {
       pb={5}
       pr={5}
     >
-      <ReactMarkdown components={ChakraUIRenderer()} skipHtml>
-        {content}
-      </ReactMarkdown>
+      {content({})}
     </Box>
   );
 };
