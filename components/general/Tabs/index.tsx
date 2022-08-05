@@ -21,7 +21,7 @@ const TabsComponent: FC<TabsProps> = ({ tabs }) => {
       borderRadius={20}
       bg={"white"}
       boxShadow="lg"
-      width={{ base: "xs", lg: "2xl" }}
+      width={{ base: "100%", lg: "2xl" }}
     >
       <TabList>
         {tabs.map((tab, index) => (

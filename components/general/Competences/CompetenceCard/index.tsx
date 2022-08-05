@@ -11,7 +11,7 @@ export interface CompetenceCardProps {
 const CompetenceCard: FC<CompetenceCardProps> = ({ content, color }) => {
   return (
     <Box
-      w={{ base: "xs", md: "100%", lg: "100%" }}
+      w={"100%"}
       bg={color ? "blue.600" : "green.400"}
       color={color ? "white" : "black"}
       borderRadius={30}

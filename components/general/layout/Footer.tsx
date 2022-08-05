@@ -63,7 +63,7 @@ export default function Footer() {
         align={"center"}
       >
         <Stack direction={"row"} spacing={6}>
-          <Link href={"/accueil"}>Accueil</Link>
+          <Link href={"/"}>Accueil</Link>
           <Link href={"/projets"}>Projets</Link>
           <Link href={"/entreprise"}>Entreprise</Link>
           <Link href={"/blog"}>Blog</Link>
