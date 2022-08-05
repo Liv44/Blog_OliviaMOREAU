@@ -32,7 +32,8 @@ const Hero: FC<HeroProps> = ({
         margin={{ base: 5, md: 0 }}
         spacing={{ base: 4, md: 5 }}
         py={{ base: 5, md: 7 }}
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column-reverse", md: "row" }}
+        gap={5}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
