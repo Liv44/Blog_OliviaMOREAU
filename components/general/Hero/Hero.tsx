@@ -29,6 +29,7 @@ const Hero: FC<HeroProps> = ({
       <Stack
         align={"center"}
         // pt={0}
+        margin={{ base: 5, md: 0 }}
         spacing={{ base: 4, md: 5 }}
         py={{ base: 5, md: 7 }}
         direction={{ base: "column", md: "row" }}
@@ -47,7 +48,11 @@ const Hero: FC<HeroProps> = ({
           <Flex direction="column" gap={5}>
             {descriptions &&
               descriptions.map((desc, index) => (
-                <Text key={index} color={"gray.500"}>
+                <Text
+                  key={index}
+                  color={"gray.500"}
+                  textAlign={{ base: "justify" }}
+                >
                   {desc}
                 </Text>
               ))}

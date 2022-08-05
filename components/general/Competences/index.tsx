@@ -20,6 +20,7 @@ const Competences: FC<CompetencesProps> = ({ competences }) => {
     <Box m={10}>
       <Title title="Mes compétences"></Title>
       <Grid
+        m={{ base: 5, md: 12, lg: 12 }}
         templateColumns={{
           base: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)",

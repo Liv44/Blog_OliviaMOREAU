@@ -125,8 +125,8 @@ export const pageData: pageDataInterface = {
           dates: "septembre 2020 - septembre 2023",
           descriptions: [
             "Enseignement de base de l'informatique. Réalisation de différents projets avec différents langages. J'y apprends l'algorithmie, la structure d'un code, les bonnes pratiques, la gestion de différents outils de développement.",
-            "J'ai choisi l'école Ynov car elle propose une formation axée sur les projets. J'ai pu apprendre le travail d'équipe et la gestion de projets. Je me spéciie en 3ème année avec l'option développement.",
-            "À la suite de mon Bachelor, je souahite continuer vers un Master Expert Informatique et Sciences de l'Information.",
+            "J'ai choisi l'école Ynov car elle propose une formation axée sur les projets. J'ai pu apprendre le travail d'équipe et la gestion de projets. Je me spécifie en 3ème année avec l'option développement.",
+            "À la suite de mon Bachelor, je souhaite continuer vers un Master Expert Informatique et Sciences de l'Information.",
           ],
         }),
       },
@@ -137,12 +137,12 @@ export const pageData: pageDataInterface = {
       title: "Théâtre",
       description:
         "Depuis plus de 10 ans, je suis comédienne amatrice dans la troupe Kiproko à Valanjou (49). J’ai aussi été animatrice de groupes d’enfants pendant 5 ans et membre du bureau en tant que chargée de communication.",
-      competences: ["mémorisation", "lâcher prise", "confiance en soit"],
+      competences: ["mémorisation", "lâcher prise", "confiance en soi"],
     },
     {
       title: "Musique",
       description:
-        "Pendant 10 ans, j'ai suivi des cours de saxophone. J'ai fait partie de l'orchestre d'harmonie de Chemillé-en-Anjou (49) pendant 4 ans. J'apprends aussi en autoditacte le chant, le ukulélé et le kalimba. ",
+        "Pendant 10 ans, j'ai suivi des cours de saxophone. J'ai fait parti de l'orchestre d'harmonie de Chemillé-en-Anjou (49) pendant 4 ans. J'apprends aussi en autoditacte le chant, le ukulélé et le kalimba. ",
       competences: ["rigueur", "sens artistique", "travail collectif"],
     },
   ],
@@ -174,7 +174,7 @@ export const pageData: pageDataInterface = {
       {
         title: "Capacité d'apprentissage",
         description:
-          "J'apprends très vite, ce qui me permet de découvrir des notions rapidement et de les appliquer directement. Je sais comprendre du code et le réutiliser en l'adaptant à ce que j'ai besoin.",
+          "J'apprends vite, ce qui me permet de découvrir des notions rapidement et de les appliquer directement. Je sais comprendre du code et le réutiliser en l'adaptant à ce que j'ai besoin.",
       },
       {
         title: "Force de proposition",

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import * as React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 import Hero from "../components/general/Hero/Hero";
 import { pageData } from "./api/data";
 import ExperiencesList from "../components/pages/Home/ExperienceList";
@@ -33,14 +33,14 @@ const test = [
 
 const Home: NextPage = () => {
   return (
-    <Box>
+    <VStack gap={16}>
       <Hero {...pageData.hero}></Hero>
       <Banner {...pageData.softskills}></Banner>
       <ExperiencesList experiences={pageData.experiences}></ExperiencesList>
       <ScolariteComponent {...pageData.scolarite}></ScolariteComponent>
       <Competences competences={pageData.competences}></Competences>
       <Hobbies hobbies={pageData.hobbies}></Hobbies>
-    </Box>
+    </VStack>
   );
 };
 

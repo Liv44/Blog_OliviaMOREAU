@@ -7,13 +7,14 @@ const ScolariteComponent: FC<TabsProps> = ({ tabs }) => {
     <Flex
       direction={{ base: "column", md: "column", lg: "row" }}
       justifyContent="space-around"
-      p={{ base: "0", md: "5", lg: "5" }}
+      p={{ base: "8", md: "5", lg: "5" }}
       alignItems="center"
       bg={"blue.100"}
       gap={4}
+      w="100%"
     >
       <Image
-        width={{ base: "200px", md: "400px", lg: "450px" }}
+        width={{ base: "300px", md: "400px", lg: "450px" }}
         src="/cuate.png"
         alt="education—Image"
       ></Image>
