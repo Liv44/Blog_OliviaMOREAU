@@ -14,11 +14,12 @@ const markdown: string = `
 
 export interface CompetencesProps {
   competences: CompetenceCardProps[];
+  title: string;
 }
-const Competences: FC<CompetencesProps> = ({ competences }) => {
+const Competences: FC<CompetencesProps> = ({ competences, title }) => {
   return (
     <Box m={10}>
-      <Title title="Mes compétences"></Title>
+      <Title title={title}></Title>
       <Grid
         m={{ base: 5, md: 12, lg: 12 }}
         templateColumns={{
