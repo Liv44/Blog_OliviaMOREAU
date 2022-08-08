@@ -1,49 +1,51 @@
 import {
-  Button,
-  Container,
-  Divider,
   Flex,
   Heading,
   Icon,
   Image,
-  SimpleGrid,
   Stack,
   StackDivider,
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-import { StarFilled, StarOutlined } from "@ant-design/icons";
-
 import { FC } from "react";
 
-interface HobbiesProps {
-  hobbies: HobbieProp[];
+interface FinalCardProps {
+  content: FinalContentProp[];
 }
-export interface HobbieProp {
+export interface FinalContentProp {
   title: string;
   description: string;
-  competences: string[];
+  competences?: string[];
+  icon?: any;
 }
 
-const Hobby: FC<HobbieProp> = ({ title, description, competences }) => {
+const FinalContent: FC<FinalContentProp> = ({
+  title,
+  description,
+  competences,
+  icon,
+}) => {
   return (
     <Stack spacing={4}>
       <Flex gap={3} alignItems="center">
-        <Icon as={StarFilled} color={"green.400"}></Icon>
+        {icon && <Icon as={icon} color={"green.400"}></Icon>}
         <Heading fontSize={"xl"}>{title}</Heading>
       </Flex>
       <Text fontSize={"md"} textAlign="justify">
         {description}
       </Text>
-      <Text fontSize={"sm"} color={"gray.500"}>
-        COMPÉTENCES: {competences.join(", ")}
-      </Text>
+      {competences && (
+        <Text fontSize={"sm"} color={"gray.500"}>
+          COMPÉTENCES: {competences.join(", ")}
+        </Text>
+      )}
     </Stack>
   );
 };
 
-const Hobbies: FC<HobbiesProps> = ({ hobbies }) => {
+const FinalCard: FC<FinalCardProps> = ({ content }) => {
   return (
     <Flex
       p={5}
@@ -59,8 +61,8 @@ const Hobbies: FC<HobbiesProps> = ({ hobbies }) => {
       <Stack spacing={4} width={{ base: "90%", md: "50%" }}>
         <Heading textAlign="center">Mes passions</Heading>
         <Stack spacing={4} divider={<StackDivider borderColor={"green.500"} />}>
-          {hobbies.map((hobby, index) => {
-            return <Hobby key={index} {...hobby}></Hobby>;
+          {content.map((oneContent, index) => {
+            return <FinalContent key={index} {...oneContent}></FinalContent>;
           })}
         </Stack>
       </Stack>
@@ -76,4 +78,4 @@ const Hobbies: FC<HobbiesProps> = ({ hobbies }) => {
   );
 };
 
-export default Hobbies;
+export default FinalCard;

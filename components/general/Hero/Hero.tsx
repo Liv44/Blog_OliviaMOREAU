@@ -14,7 +14,7 @@ export interface HeroProps {
   subTitle?: string;
   title?: string;
   descriptions?: string[];
-  buttons: { label: string; link: string }[];
+  buttons?: { label: string; link: string }[];
   lienImage: string;
 }
 const Hero: FC<HeroProps> = ({
@@ -62,23 +62,24 @@ const Hero: FC<HeroProps> = ({
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            {buttons.map((button, index) => {
-              return (
-                <Button
-                  key={index}
-                  rounded={"full"}
-                  size={"lg"}
-                  fontWeight={"normal"}
-                  px={6}
-                  colorScheme={"blue"}
-                  variant={"outline"}
-                  as={"a"}
-                  href={button.link}
-                >
-                  {button.label}
-                </Button>
-              );
-            })}
+            {buttons &&
+              buttons.map((button, index) => {
+                return (
+                  <Button
+                    key={index}
+                    rounded={"full"}
+                    size={"lg"}
+                    fontWeight={"normal"}
+                    px={6}
+                    colorScheme={"blue"}
+                    variant={"outline"}
+                    as={"a"}
+                    href={button.link}
+                  >
+                    {button.label}
+                  </Button>
+                );
+              })}
           </Stack>
         </Stack>
         <Flex
