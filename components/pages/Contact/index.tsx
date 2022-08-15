@@ -10,18 +10,17 @@ import Title from "../../general/Title";
 
 const ContactCard: FC = () => {
   return (
-    <VStack>
+    <VStack p={5}>
       <Title
         title="Me contacter"
         subTitle="Vous pouvez me contacter sur mes réseaux sociaux ou par mail."
       ></Title>
       <Stack direction={{ base: "column", md: "row" }} alignItems={"center"}>
         <Stack
-          alignItems={"flex-start"}
+          alignItems={{ base: "center", md: "flex-start" }}
           gap={3}
           justifyContent={{ base: "center", md: "flex-start" }}
-          direction={{ base: "row", md: "column" }}
-          flexWrap={"wrap"}
+          direction={{ base: "column", md: "column" }}
         >
           <ItemContact
             link="https://github.com/liv44"
@@ -66,6 +65,7 @@ const ItemContact: FC<ItemContactProps> = ({ icon, text, link }) => {
   return (
     <Link
       href={link}
+      width={"100%"}
       isExternal
       display="flex"
       alignItems={"center"}
@@ -76,7 +76,13 @@ const ItemContact: FC<ItemContactProps> = ({ icon, text, link }) => {
       color="blue"
       size={"lg"}
       fontSize={"xl"}
-      _hover={{ textDecoration: "none", color: "orange.500" }}
+      _hover={{
+        textDecoration: "none",
+        color: "orange.500",
+        transform: "scale(1.05)",
+      }}
+      transition="0.2s ease-in-out"
+      transform="scale(1.0)"
     >
       <Icon as={icon} color={"blue"}></Icon>
       <Text>{text}</Text>
