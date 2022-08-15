@@ -1,7 +1,7 @@
 import { Box, Heading, Stack } from "@chakra-ui/react";
 import type { NextPage } from "next";
-import Title from "../components/general/Title";
-import ArticleList from "../components/pages/Blog/ArticleList";
+import Title from "../../components/general/Title";
+import ArticleList from "../../components/pages/Blog/ArticleList";
 
 const Blog: NextPage = () => {
   return (

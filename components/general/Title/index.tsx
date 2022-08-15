@@ -4,11 +4,12 @@ import { FC } from "react";
 interface TitleProps {
   title: string;
   subTitle?: string;
+  width?: string;
 }
 
-const Title: FC<TitleProps> = ({ title, subTitle }) => {
+const Title: FC<TitleProps> = ({ title, subTitle, width }) => {
   return (
-    <Stack alignItems={"center"}>
+    <Stack alignItems={"center"} width={width}>
       <Heading textAlign={"center"}>{title}</Heading>
       <Text
         fontSize={"lg"}
