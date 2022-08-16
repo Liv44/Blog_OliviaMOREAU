@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 
 const Projets: NextPage = () => {
   return (
-    <Box h="75vh">
+    <Box>
       <Heading>Page Projets en cours de réalisation.</Heading>
     </Box>
   );

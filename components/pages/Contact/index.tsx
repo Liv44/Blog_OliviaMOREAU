@@ -44,7 +44,7 @@ const ContactCard: FC = () => {
           ></ItemContact>
         </Stack>
         <Image
-          height={{ base: "36vh", md: "61vh" }}
+          height={"xs"}
           alt={"Contact Image"}
           objectFit={"cover"}
           src={"./contact.png"}
