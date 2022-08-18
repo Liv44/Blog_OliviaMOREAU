@@ -17,7 +17,11 @@ const Entreprise: NextPage = () => {
         competences={pageEntreprise.competences}
         title={"Les compétences acquises"}
       ></Competences>
-      <FinalCard content={pageEntreprise.bilan}></FinalCard>
+      <FinalCard
+        content={pageEntreprise.bilan}
+        title={"Mon Bilan"}
+        img={"/olivia_seau.png"}
+      ></FinalCard>
     </VStack>
   );
 };

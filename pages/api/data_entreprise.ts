@@ -4,7 +4,8 @@ import { FinalContentProp } from "../../components/general/FinalCard";
 import { HeroProps } from "../../components/general/Hero/Hero";
 import { TabsProps } from "../../components/general/Tabs";
 import Angular from "../../components/pages/Entreprise/CompetencesEntreprise/Angular";
-import Autonomie from "../../components/pages/Entreprise/CompetencesEntreprise/Autonomie";
+import Docker from "../../components/pages/Entreprise/CompetencesEntreprise/Docker";
+import FileZilla from "../../components/pages/Entreprise/CompetencesEntreprise/FileZilla";
 import PrimeNG from "../../components/pages/Entreprise/CompetencesEntreprise/PrimeNG";
 import MissionCard from "../../components/pages/Entreprise/MissionsComponent/MissionCard";
 
@@ -21,9 +22,10 @@ export const pageEntreprise: pageEntrepriseInterface = {
     subTitle: "Start-up, biodéchets, compostage...",
     title: "Qu'est-ce que Ouivalo ?",
     descriptions: [
-      "Ouivalo est une start’up créée en 2019 par Camille, Kevin et Richard dans le but de sensibiliser au compostage et proposer des solutions pour la gestion des biodéchets.",
-      "Depuis xxxx, les bureaux de Ouivalo se situent à l’Incubateur Centrale Audencia ENSA.",
+      "Ouivalo est une start’up créée en 2019 par Camille MARHADOUR-SAVARY, Kevin HAMON et Richard HUGOU dans le but de sensibiliser au compostage et proposer des solutions pour la gestion des biodéchets en ville.",
+      "Depuis février 2020, les bureaux de Ouivalo se situent à l’Incubateur Centrale Audencia ENSA. L'incubateur propose des aides financières et matérielles (les locaux de Audencia par exemple) à différentes startups pour leur permettre de développer leurs projets.",
       "L’équipe se compose de 3 co-fondateur.ice.s, Camille, Kevin et Richard, de 2 alternants en développement web (Matis et Kael), et lors de mon CDD étaient aussi présent.e.s Alix (stagiaire en Communication), Déborah (stagiaire en développement commercial), et Rémi (développeur Back-End).",
+      "Ouivalo veut faciliter le compostage en ville en proposant des solutions innovantes et performantes pour les particuliers et les collectivités. En effet, d'ici 3 ans, les collectivités auront l'obligation de proposer une solution de gestion de biodéchets, l'équipe de Ouivalo travailler alors sur ces solutions.",
     ],
     lienImage: "./ouivalo_logo.png",
   },
@@ -33,17 +35,17 @@ export const pageEntreprise: pageEntrepriseInterface = {
       {
         title: "Service de compostage",
         description:
-          "Ouivalo propose aux citoyens un abonnement permettant de déposer son seau de compost dans un magasin partenaire.",
+          "Ouivalo propose actuellement un service dédié aux citoyens. Il consiste en un abonnement permettant de récupérer un seau vide dans un magasin partenaire et de le redéposer une fois rempli de biodéchets. L'équipe de Ouivalo s'occupe ensuite de les récupérer, de les vider puis de les nettoyer.",
       },
       {
         title: "Prestations sur mesure",
         description:
-          "Ouivalo propose ses services à des particuliers pour la création de leur site internet.",
+          "L'équipe de Ouivalo ayant des connaissances dans le développement web, elle propose ses services à des particuliers pour la création de leur site. Cela permet de développer les compétences des salariés et d'aider les particuliers à réaliser leurs projets",
       },
       {
         title: "Développement d’outils",
         description:
-          "La startup a pour vocation de développer des outils destinées aux citoyens et aux collectivités.",
+          "Au delà de la récolte des seaux, Ouivalo veut proposer à l'avenir des aides afin de faciliter la gestion des biodéchets en ville. L'équipe de Ouivalo souhaite créer une plateforme en ligne répertoriant les différentes solutions de compostage en France, mais aussi un guide de tri intelligent. Sur le plan plus technique, Richard HUGOU travaille sur un système permettant de récupérer les données d'un bac de compost et donc de faciliter la gestion des différents bacs dans une collectivité.",
       },
     ],
     color: "orange.500",
@@ -56,7 +58,7 @@ export const pageEntreprise: pageEntrepriseInterface = {
       content: PrimeNG,
     },
     {
-      content: Autonomie,
+      content: Docker,
     },
   ],
   missions: {
@@ -65,20 +67,23 @@ export const pageEntreprise: pageEntrepriseInterface = {
         headerTitle: "Développement Web",
         content: MissionCard({
           title: "Développement d'un outil pour un prestataire",
-          mission: "Développer le Front End d'une application Web en Angular",
-          descriptions: ["Test", "test"],
+          mission: "Récupérer les données d'une API pour les afficher en Front",
+          descriptions: [
+            "Ma principale mission durant ce CDD a été le développement d'une application. Dans un premier temps j'ai pris connaissance des maquettes sur Figma. J'ai commencé à créer les différents composants utiles, puis lorsque l'API côté Back était fonctionnelle, j'ai récupéré les données pour pouvoir les mettre en forme.",
+            "J'ai pu ainsi créer un outil affichant diverses données, gérer différentes pages avec les Routers, créer des formulaires pour renvoyer des données à l'API.",
+            "J'ai travaillé la plupart du temps seule en tant que développeuse Front End sur cette application, parfois rejointe par Mathis (alternant) et Kevin (cofondateur) pour certaines pages. Rémi (Développeur Django) s'est lui occupé de la partie Back End.",
+          ],
         }),
       },
       {
         headerTitle: "Nettoyage des seaux",
         content: MissionCard({
-          title: "Opération lavage des seaux tous les mercredis",
+          title: "Opération lavage des seaux",
           mission:
             "Ouivalo proposant un service de compostage des bio-déchets en louant des seaux aux particuliers, nous nous occupons de les réceptionner et les laver.",
           descriptions: [
-            "Vidange des seaux de bio-déchets dans des grands bacs",
-            "Nettoyage de chaque seau et couvercle",
-            "Rangement des seaux, bacs de nettoyage",
+            "Chaque mercredi après-midi, nous allons tous ensemble juste à côté des bureaux pour réceptionner une centaine de seaux. Nous commençons par les vider dans des grands bacs qui seront récupérés par une entreprise qui videra tous ces biodéchets chez des agriculteurs pour leurs terres",
+            "Après les avoir vidés, nous passons au nettoyage de chaque seau et couvercle, à la main, dans des bacs. Puis, nous les rangeons dans une cabane afin qu'ils sèchent et qu'ils puissent être redistribués aux magasins.",
           ],
         }),
       },
@@ -86,14 +91,27 @@ export const pageEntreprise: pageEntrepriseInterface = {
   },
   bilan: [
     {
-      title: "Autonomie",
-      description:
-        "Ce poste m'a permis d'apprendre à être autonome car j'ai su travailler seule sur le côté front-end de l'application.",
+      title: "Montée en compétences",
+      description: `
+      Cette première expérience professionnelle m'a permis de monter en compétences. J'y ai découvert le travail en entreprise, avec un réel projet de développement web.
+      J'ai donc développé mes compétences en Front-End grâce à l'apprentissage du Framework Angular.
+      Cela a confirmé ma volonté de continuer dans ce milieu et d'en faire mon métier.`,
     },
+    // {
+    //   title: "Autonomie",
+    //   description: `Travaillant en majorité seule sur le côté front-end de l'application, j'ai appris à être très autonome. Je sais maintenant mieux chercher par moi-même les solutions à mes problèmes pour avancer plus rapidement.
+    //   J'ai tout de même ressenti parfois de la frustration à mettre du temps à résoudre un problème à cause de mon manque de savoir sur certains points.
+    //   Mes collègues étaient là quand je bloquais trop longtemps sur une tâche.
+    //   // Cependant, j'ai travaillé seule pendant 2 semaines, les autres collègues développeurs étant en vacances  sans collègue développeur qui pouvait m'aider en cas d'erreur.
+    //   Mais j'ai pris confiance en moi et j'ai développé mon autonomie.
+    //   Par la suite, grâce à mon alternance, j'espère pouvoir travailler en équipe pour apprendre à mieux travailler en équipe.`,
+    // },
     {
-      title: "Première expérience professionnelle",
-      description:
-        "Étant ma première expérience professionnelle en tant que développeuse web, cela a confirmé ma volonté de continuer dans ce milieu et d'en faire mon métier. ",
+      title: "Remerciements",
+      description: `
+      Je remercie Kevin de m'avoir fait confiance pour me proposer ce poste en CDD, c'était pour moi une très belle opportunité. 
+      Je remercie aussi Camille et Richard qui m'ont très bien accueillie dans l'entreprise. 
+      Merci aussi aux collègues avec qui j'ai pu échanger durant ces 3 mois.`,
     },
   ],
 };

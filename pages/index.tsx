@@ -42,7 +42,11 @@ const Home: NextPage = () => {
         competences={pageData.competences}
         title="Mes compétences"
       ></Competences>
-      <FinalCard content={pageData.hobbies}></FinalCard>
+      <FinalCard
+        content={pageData.hobbies}
+        title={"Mes passions"}
+        img={"/hobbies.png"}
+      ></FinalCard>
     </VStack>
   );
 };

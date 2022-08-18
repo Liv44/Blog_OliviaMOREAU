@@ -30,8 +30,8 @@ export const pageData: pageDataInterface = {
     ],
     buttons: [
       {
-        label: "Voir mes articles",
-        link: "/blog",
+        label: "Profil Linkedin",
+        link: "https://www.linkedin.com/in/olivia-moreau/",
       },
       {
         label: "Découvrir mes projets",
