@@ -261,10 +261,6 @@ const NAV_ITEMS: Array<NavItem> = [
     href: "/",
   },
   {
-    label: "Projets",
-    href: "/projets",
-  },
-  {
     label: "Entreprise",
     href: "/entreprise",
   },

@@ -42,7 +42,7 @@ export const FrontEnd: FC = () => {
         Lors de ma licence, j{"'"}ai appris les langages de base (HTML, CSS,
         JS). Puis, grâce aux projets réalisés durant mon Bachelor informatique
         et ma première expérience professionnelle, je maîtrise maintenant
-        quelques frameworks JS.
+        quelques frameworks/librairies JS.
       </Text>
       <HStack
         flexWrap={"wrap"}
