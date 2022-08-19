@@ -31,11 +31,11 @@ export const pageData: pageDataInterface = {
     buttons: [
       {
         label: "Profil Linkedin",
-        link: "https://www.linkedin.com/in/olivia-moreau/",
+        link: "https://www.linkedin.com/in/oliviamoreau/",
       },
       {
-        label: "Découvrir mes projets",
-        link: "/projets",
+        label: "Voir mon CV",
+        link: "/CV_Olivia_MOREAU.pdf",
       },
     ],
     lienImage: "/profile_picture.png",

@@ -22,30 +22,30 @@ export const pageEntreprise: pageEntrepriseInterface = {
     subTitle: "Start-up, biodéchets, compostage...",
     title: "Qu'est-ce que Ouivalo ?",
     descriptions: [
-      "Ouivalo est une start’up créée en 2019 par Camille MARHADOUR-SAVARY, Kevin HAMON et Richard HUGOU dans le but de sensibiliser au compostage et proposer des solutions pour la gestion des biodéchets en ville.",
-      "Depuis février 2020, les bureaux de Ouivalo se situent à l’Incubateur Centrale Audencia ENSA. L'incubateur propose un dispositif d'accompagnement pour les startups pour leur permettre de développer leurs projets.",
+      "Ouivalo est une start-up créée en 2019 par Camille MARHADOUR-SAVARY, Kevin HAMON et Richard HUGOU dans le but de sensibiliser au compostage et proposer des solutions pour la gestion des biodéchets en ville.",
+      "Depuis février 2020, les bureaux de Ouivalo se situent dans les locaux de Centrale. L'incubateur Centrale Audencia ENSA propose un dispositif d'accompagnement pour les start-ups pour leur permettre de développer leurs projets, grâce à des moyens financiers, matériels et des heures d'expertises sur l'entrepreunariat.",
       "L’équipe se compose de 3 co-fondateur.ice.s, Camille, Kevin et Richard, de 2 alternants en développement web (Matis et Kael), et lors de mon CDD étaient aussi présent.e.s Alix (stagiaire en Communication), Déborah (stagiaire en développement commercial), et Rémi (développeur Back-End).",
-      "Ouivalo veut faciliter le compostage en ville en proposant des solutions innovantes et performantes pour les particuliers et les collectivités. En effet, d'ici 3 ans, les collectivités auront l'obligation de proposer une solution de gestion de biodéchets, l'équipe de Ouivalo travaille alors sur ces solutions.",
+      "Ouivalo veut faciliter le compostage en ville en proposant des outils innovants et performants pour les particuliers et les collectivités. En effet, en 2024, les collectivités auront l'obligation de proposer une solution de gestion de biodéchets, l'équipe de Ouivalo travaille alors sur des solutions numériques.",
     ],
     lienImage: "./ouivalo_logo.png",
   },
   missionOuivalo: {
-    title: "Les missions de Ouivalo",
+    title: "Les activités de Ouivalo",
     blocs: [
       {
         title: "Service de compostage",
         description:
-          "Ouivalo propose actuellement un service dédié aux citoyens. Il consiste en un abonnement permettant de récupérer un seau vide dans un magasin partenaire et de le redéposer une fois rempli de biodéchets. L'équipe de Ouivalo s'occupe ensuite de les récupérer, de les vider puis de les nettoyer.",
+          "Ouivalo propose actuellement un service dédié aux citoyens. Il consiste en un abonnement permettant de récupérer un seau vide dans un magasin partenaire et de le redéposer une fois rempli de biodéchets. L'équipe de Ouivalo s'occupe ensuite de les récupérer, de les vider puis de les nettoyer. Le compost est ensuite récupéré par un prestataire.",
       },
       {
         title: "Prestations sur mesure",
         description:
-          "L'équipe de Ouivalo ayant des connaissances dans le développement web, elle propose ses services à des particuliers pour la création de leur site. Cela permet de développer les compétences des salariés et d'aider les particuliers à réaliser leurs projets.",
+          "L'équipe de Ouivalo ayant des connaissances dans le développement web, elle propose ses services à des professionnels pour la création de leur site. Cela permet de développer les compétences des salariés et d'aider les professionnels à réaliser leurs projets.",
       },
       {
         title: "Développement d’outils",
         description:
-          "Au delà de la récolte des seaux, Ouivalo veut proposer à l'avenir des aides afin de faciliter la gestion des biodéchets en ville. L'équipe de Ouivalo souhaite créer une plateforme en ligne répertoriant les différentes solutions de compostage en France, mais aussi un guide de tri intelligent. Sur le plan plus technique, Richard HUGOU travaille sur un système permettant de récupérer les données d'un bac de compost et donc de faciliter la gestion des différents bacs dans une collectivité.",
+          "Au delà de la récolte des seaux, Ouivalo propose des aides afin de faciliter la gestion des biodéchets en ville. L'équipe de Ouivalo développe donc actuellement une plateforme en ligne répertoriant les différentes solutions de compostage en France, mais aussi un guide de tri intelligent via une application mobile. Sur le plan plus technique, Richard HUGOU travaille sur un object connecté permettant de récupérer les données d'un bac de compost et de les transmettre à un back office pour faciliter la gestion des différents bacs dans une collectivité.",
       },
     ],
     color: "orange.500",
