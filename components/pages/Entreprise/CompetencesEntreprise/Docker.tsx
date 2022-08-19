@@ -14,7 +14,7 @@ const Docker: FC = () => {
         Docker est un logiciel de déploiement de conteneurs. Ne l{"'"}ayant
         jamais utilisé, ce projet m{"'"}a permis de découvrir son utilisation. J
         {"'"}ai appris les notions essentielles de Docker. Je sais maintenant
-        lancer un projet grace à la commande docker-compose build et
+        lancer un projet grâce aux commandes docker-compose build et
         docker-compose up -d.
       </Text>
     </VStack>

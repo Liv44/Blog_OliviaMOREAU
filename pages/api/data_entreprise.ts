@@ -23,9 +23,9 @@ export const pageEntreprise: pageEntrepriseInterface = {
     title: "Qu'est-ce que Ouivalo ?",
     descriptions: [
       "Ouivalo est une start’up créée en 2019 par Camille MARHADOUR-SAVARY, Kevin HAMON et Richard HUGOU dans le but de sensibiliser au compostage et proposer des solutions pour la gestion des biodéchets en ville.",
-      "Depuis février 2020, les bureaux de Ouivalo se situent à l’Incubateur Centrale Audencia ENSA. L'incubateur propose des aides financières et matérielles (les locaux de Audencia par exemple) à différentes startups pour leur permettre de développer leurs projets.",
+      "Depuis février 2020, les bureaux de Ouivalo se situent à l’Incubateur Centrale Audencia ENSA. L'incubateur propose un dispositif d'accompagnement pour les startups pour leur permettre de développer leurs projets.",
       "L’équipe se compose de 3 co-fondateur.ice.s, Camille, Kevin et Richard, de 2 alternants en développement web (Matis et Kael), et lors de mon CDD étaient aussi présent.e.s Alix (stagiaire en Communication), Déborah (stagiaire en développement commercial), et Rémi (développeur Back-End).",
-      "Ouivalo veut faciliter le compostage en ville en proposant des solutions innovantes et performantes pour les particuliers et les collectivités. En effet, d'ici 3 ans, les collectivités auront l'obligation de proposer une solution de gestion de biodéchets, l'équipe de Ouivalo travailler alors sur ces solutions.",
+      "Ouivalo veut faciliter le compostage en ville en proposant des solutions innovantes et performantes pour les particuliers et les collectivités. En effet, d'ici 3 ans, les collectivités auront l'obligation de proposer une solution de gestion de biodéchets, l'équipe de Ouivalo travaille alors sur ces solutions.",
     ],
     lienImage: "./ouivalo_logo.png",
   },
@@ -40,7 +40,7 @@ export const pageEntreprise: pageEntrepriseInterface = {
       {
         title: "Prestations sur mesure",
         description:
-          "L'équipe de Ouivalo ayant des connaissances dans le développement web, elle propose ses services à des particuliers pour la création de leur site. Cela permet de développer les compétences des salariés et d'aider les particuliers à réaliser leurs projets",
+          "L'équipe de Ouivalo ayant des connaissances dans le développement web, elle propose ses services à des particuliers pour la création de leur site. Cela permet de développer les compétences des salariés et d'aider les particuliers à réaliser leurs projets.",
       },
       {
         title: "Développement d’outils",
