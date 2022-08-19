@@ -5,9 +5,9 @@ import Hero from "../components/general/Hero/Hero";
 import { pageData } from "./api/data";
 import ExperiencesList from "../components/pages/Home/ExperienceList";
 import ScolariteComponent from "../components/pages/Home/ScolariteComponent";
-import Hobbies from "../components/pages/Home/HobbiesComponent";
 import Competences from "../components/general/Competences";
 import Banner from "../components/general/Banner";
+import FinalCard from "../components/general/FinalCard";
 
 const competence1 = `
 ##### ANGULAR
@@ -38,8 +38,15 @@ const Home: NextPage = () => {
       <Banner {...pageData.softskills}></Banner>
       <ExperiencesList experiences={pageData.experiences}></ExperiencesList>
       <ScolariteComponent {...pageData.scolarite}></ScolariteComponent>
-      <Competences competences={pageData.competences}></Competences>
-      <Hobbies hobbies={pageData.hobbies}></Hobbies>
+      <Competences
+        competences={pageData.competences}
+        title="Mes compétences"
+      ></Competences>
+      <FinalCard
+        content={pageData.hobbies}
+        title={"Mes passions"}
+        img={"/hobbies.png"}
+      ></FinalCard>
     </VStack>
   );
 };

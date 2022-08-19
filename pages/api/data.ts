@@ -7,13 +7,14 @@ import { BackEnd } from "../../components/pages/Home/CompetencesHome/BackEnd";
 import { FrontEnd } from "../../components/pages/Home/CompetencesHome/FrontEnd";
 import { Organisation } from "../../components/pages/Home/CompetencesHome/Organisation";
 import { ExperienceCardProps } from "../../components/pages/Home/ExperienceList/ExperienceCard/ExperienceCard";
-import { HobbieProp } from "../../components/pages/Home/HobbiesComponent";
 import ScolariteCard from "../../components/pages/Home/ScolariteComponent/ScolariteCard";
+import { StarFilled } from "@ant-design/icons";
+import { FinalContentProp } from "../../components/general/FinalCard";
 interface pageDataInterface {
   hero: HeroProps;
   experiences: ExperienceCardProps[];
   scolarite: TabsProps;
-  hobbies: HobbieProp[];
+  hobbies: FinalContentProp[];
   competences: CompetenceCardProps[];
   softskills: BannerProps;
 }
@@ -29,8 +30,8 @@ export const pageData: pageDataInterface = {
     ],
     buttons: [
       {
-        label: "Voir mes articles",
-        link: "/blog",
+        label: "Profil Linkedin",
+        link: "https://www.linkedin.com/in/olivia-moreau/",
       },
       {
         label: "Découvrir mes projets",
@@ -138,12 +139,14 @@ export const pageData: pageDataInterface = {
       description:
         "Depuis plus de 10 ans, je suis comédienne amatrice dans la troupe Kiproko à Valanjou (49). J’ai aussi été animatrice de groupes d’enfants pendant 5 ans et membre du bureau en tant que chargée de communication.",
       competences: ["mémorisation", "lâcher prise", "confiance en soi"],
+      icon: StarFilled,
     },
     {
       title: "Musique",
       description:
         "Pendant 10 ans, j'ai suivi des cours de saxophone. J'ai fait parti de l'orchestre d'harmonie de Chemillé-en-Anjou (49) pendant 4 ans. J'apprends aussi en autoditacte le chant, le ukulélé et le kalimba. ",
       competences: ["rigueur", "sens artistique", "travail collectif"],
+      icon: StarFilled,
     },
   ],
   competences: [
