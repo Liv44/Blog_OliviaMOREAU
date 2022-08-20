@@ -38,6 +38,7 @@ const PreviewArticle: FC<articleProp> = ({ title, description, id, photo }) => {
           src={photo}
           alt="some text"
           objectFit="cover"
+          objectPosition={"top"}
           boxSize={"200px"}
           width="100%"
           fallbackSrc="https://via.placeholder.com/200"

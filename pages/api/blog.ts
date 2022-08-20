@@ -1,10 +1,13 @@
-import Web2Day from "../../components/pages/Blog/Article/Web2day";
+import BilanArticle from "../../public/articles/Bilan/BilanArticle";
+import MeetupReactArticle from "../../public/articles/MeetupReact/MeetupReactArticle";
+import Recherche from "../../public/articles/Recherche/Recherche";
+import web2DayArticle from "../../public/articles/Web2Day/web2DayMD";
 
 export interface articleProp {
   id: number;
   title: string;
   description: string;
-  content?: React.ReactNode;
+  content?: string;
   photo?: string;
 }
 
@@ -14,27 +17,32 @@ export const blogData: articleProp[] = [
     title: "Le Web2Day à Nantes",
     description:
       "Le mercredi 1er juin, j'ai pu assister au Web2Day, voici un détail des conférences qui m'ont marquées.",
-    photo: "/articles/web2day.png",
-    content: Web2Day({}),
+    photo: "/articles/Web2Day/web2day.png",
+    content: web2DayArticle,
   },
   {
     id: 2,
-    title: "Les React Meetup",
+    title: "Les Meetup React",
     description:
-      "React Meetup, ou comment découvrir de nouvelles choses blablabal",
-    photo: "/articles/reactmeetup.jpeg",
+      "Meetup React : pour rencontrer des développeurs nantais et apprendre de nouveaux concepts de ReactJS.",
+    photo: "/articles/MeetupReact/react_meetup.png",
+    content: MeetupReactArticle,
   },
   {
     id: 3,
-    title: "Article 3",
+    title: "Bilan Expérience Professionnelle",
     description:
-      "React Meetup, ou comment découvrir de nouvelles choses blablabal",
+      "Dans le cadre de ma formation, j'ai réalisé un CDD en développement web. Voici un bilan de cette expérience.",
+    photo: "/olivia_seau.png",
+    content: BilanArticle,
   },
   {
     id: 4,
-    title: "Article 4",
+    title: "Recherche d'alternance et de stage",
     description:
-      "React Meetup, ou comment découvrir de nouvelles choses blablabal",
+      "Pour valider ma 2ème année et continuer en 3ème année, j’ai recherché un stage te une alternance en quelques mois. Retour sur ce que j’ai retenu de ces recherches.",
+    photo: "/articles/Recherche/search.jpg",
+    content: Recherche,
   },
   {
     id: 5,

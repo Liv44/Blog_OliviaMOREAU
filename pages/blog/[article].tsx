@@ -7,11 +7,41 @@ import {
   Spinner,
   VStack,
 } from "@chakra-ui/react";
+import ChakraUIRenderer from "chakra-ui-markdown-renderer";
 import { useRouter } from "next/router";
 import React from "react";
 import { FC, useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import Title from "../../components/general/Title";
 import { articleProp, blogData } from "../api/blog";
+import { Text } from "@chakra-ui/react";
+
+const newTheme = {
+  p: (props: { children: any }) => {
+    const { children } = props;
+    return (
+      <Text mb={5} fontSize={"md"} textAlign="justify">
+        {children}
+      </Text>
+    );
+  },
+  h1: (props: { children: any }) => {
+    const { children } = props;
+    return (
+      <Heading as={"h2"} mb={2} fontSize={"lg"} mt={{ base: 5, md: 20 }}>
+        {children}
+      </Heading>
+    );
+  },
+  a: (props: { href: string | undefined; children: any }) => {
+    const { children } = props;
+    return (
+      <Link textDecoration={"underline"} href={props.href} target="_blank">
+        {children}
+      </Link>
+    );
+  },
+};
 
 const ArticlePage: FC = () => {
   const router = useRouter();
@@ -43,14 +73,20 @@ const ArticlePage: FC = () => {
     return (
       <Box p={5}>
         {article && (
-          <VStack alignItems="flex-start">
+          <VStack alignItems="flex-start" margin={{ base: 5, md: 16 }}>
             <Link href="/blog">Retour aux articles</Link>
             <Title
               title={article.title}
               subTitle={article.description}
               width="100%"
             ></Title>
-            {article.content}
+            {article.content && typeof article.content === "string" && (
+              <Stack p={{ base: 5, md: 16 }} bgColor="white" borderRadius={20}>
+                <ReactMarkdown components={ChakraUIRenderer(newTheme)}>
+                  {article.content}
+                </ReactMarkdown>
+              </Stack>
+            )}
           </VStack>
         )}
         {!article && (
