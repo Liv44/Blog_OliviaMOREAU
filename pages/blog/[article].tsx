@@ -33,10 +33,10 @@ const newTheme = {
       </Heading>
     );
   },
-  a: (props: { href: string | undefined; children: any }) => {
+  a: (props: { children: any }) => {
     const { children } = props;
     return (
-      <Link textDecoration={"underline"} href={props.href} target="_blank">
+      <Link textDecoration={"underline"} href={children} target="_blank">
         {children}
       </Link>
     );
