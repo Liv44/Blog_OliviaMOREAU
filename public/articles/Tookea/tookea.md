@@ -43,3 +43,5 @@ Lors du développement du site, je travaillais beaucoup avec Elouan Dumont, ami 
 # Conclusion
 
 Pour conclure, Tookea est le projet qui m'a le plus appris de ma formation. J'ai appris les points essentiels de la réalisation d'un projet, de l'organisation du travail, à l'apprentissage d'un framework JS. Grâce à ce projet, j'ai pu mettre en place des rituels d'une méthode agile dans les projets réalisés en cours pour favoriser le travail d'équipe. Le fait de réaliser un vrai projet et de mettre en application la théorie apprise permet de rentrer directement dans le concret et, pour moi, d'apprendre et de prendre du plaisir à développer. Je remercie toute l'équipe Tookea, en particulier Elouan Dumont, mon binôme, et Marie GAUTRON qui m'a fait confiance et m'a transmis des connaissances qui me sont très utiles aujourd'hui.
+
+Vous pouvez retrouver le site réalisé ici : [Tookea](https://tookea.fr)

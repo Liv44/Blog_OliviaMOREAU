@@ -50,7 +50,7 @@ export const blogData: articleProp[] = [
     title: "Tookea, un projet Ydays",
     description:
       "Tookea est un projet encadré par des Masters en développement web et logiciel à Ynov.",
-    photo: "/articles/tookea/tookea.png",
+    photo: "/articles/Tookea/tookea.png",
     content: Tookea,
   },
 ];
