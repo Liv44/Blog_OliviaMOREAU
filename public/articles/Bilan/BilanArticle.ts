@@ -1,0 +1,13 @@
+const BilanArticle = `Lors de ma recherche de stage, Ouivalo m'a proposé le poste de développeuse Front End en CDD de 3 mois. J'ai bien sûr accepté cette opportunité qui signe le début de ma carrière de développeuse.
+
+Mon premier poste en tant que développeuse Front End m'a permis de développer mon autonomie. Les autres développeurs travaillant sur d'autres projets, j'étais la plupart du temps seule à développer l'application.J'ai appris à chercher par moi-même lorsqu'un point me bloquait et à poser les questions nécessaires lorsque je prenais trop de temps à résoudre une erreur.
+
+Cette première expérience m'a aussi permis d'apprendre un nouveau framework javascript. Je ne connaissais pas du tout Angular, et j'ai appris seule à m'en servir. La documentation officielle de Angular m'a beaucoup aidée, surtout grâce à des exemples concrets qui m'ont permis de mieux comprendre. Je me suis aussi appuyée sur les projets déjà réalisés dans l'entreprise pour comprendre certains concepts qui me posaient question. Enfin, j'ai regardé des vidéos, lu des tutos et expérimenté par moi-même.
+
+Concernant l'organisation du travail dans la boîte, les tâches étaient données au fur et à mesure que le projet avançait. Cela m'a parfois posé problème car j'avais du mal à me situer sur ce qui était urgent ou non à réaliser. Mais j'ai su comprendre les tâches prioritaires et avancer. Je regrette peut-être qu'il n'y ait pas de méthode mise en place pour échanger entre collègues sur notre avancée lors du projet, car nous avons parfois rencontré des difficultés pour la compréhension de certains concepts de l'application. J'aurai aimé plus de communication entre nous pour aussi savoir sur quoi travaillent les autres développeurs, afin de favoriser l'esprit d'équipe.
+
+Après avoir fait du Front End pendant 3 mois, je sais que je veux aussi développer la partie Back End sur d'autres projets. Même si j'aime la création d'une interface, j'aime aussi beaucoup la réflexion lors de la création des modèles de données, d'une api et ses endpoints. Je sais aussi à l'issue de cette expérience que je préfère travailler avec d'autres développeurs sur un projet. Étant la seule développeuse Front End sur la mission, je me suis parfois sentie perdue et j'aurais aimé être plus guidée/accompagnée. Cependant, je sais qu'il est difficile dans une Startup de la taille de Ouivalo de déployer plusieurs développeurs sur une même mission. Comme dit précédemment, cela m'a quand même appris l'autonomie.
+
+J'ai, grâce à ce CDD beaucoup appris tant au niveau technique que des softskills. Je suis satisfaite de mon travail réalisé durant ces 3 mois et je ressors avec l'envie de continuer mes études dans le développement web.
+`;
+export default BilanArticle;
