@@ -1,7 +1,8 @@
 import BilanArticle from "../../public/articles/Bilan/BilanArticle";
 import MeetupReactArticle from "../../public/articles/MeetupReact/MeetupReactArticle";
 import Recherche from "../../public/articles/Recherche/Recherche";
-import web2DayArticle from "../../public/articles/Web2Day/web2DayMD";
+import CEONomade from "../../public/articles/Web2Day/CEONomade";
+import Tookea from "../../public/articles/Tookea/tookea";
 
 export interface articleProp {
   id: number;
@@ -14,14 +15,6 @@ export interface articleProp {
 export const blogData: articleProp[] = [
   {
     id: 1,
-    title: "Le Web2Day à Nantes",
-    description:
-      "Le mercredi 1er juin, j'ai pu assister au Web2Day, voici un détail des conférences qui m'ont marquées.",
-    photo: "/articles/Web2Day/web2day.png",
-    content: web2DayArticle,
-  },
-  {
-    id: 2,
     title: "Les Meetup React",
     description:
       "Meetup React : pour rencontrer des développeurs nantais et apprendre de nouveaux concepts de ReactJS.",
@@ -29,7 +22,7 @@ export const blogData: articleProp[] = [
     content: MeetupReactArticle,
   },
   {
-    id: 3,
+    id: 2,
     title: "Bilan Expérience Professionnelle",
     description:
       "Dans le cadre de ma formation, j'ai réalisé un CDD en développement web. Voici un bilan de cette expérience.",
@@ -37,17 +30,27 @@ export const blogData: articleProp[] = [
     content: BilanArticle,
   },
   {
-    id: 4,
+    id: 3,
     title: "Recherche d'alternance et de stage",
     description:
-      "Pour valider ma 2ème année et continuer en 3ème année, j’ai recherché un stage te une alternance en quelques mois. Retour sur ce que j’ai retenu de ces recherches.",
+      "Pour valider ma 2ème année et continuer en 3ème année, j’ai recherché un stage et une alternance en quelques mois. Retour sur ce que j’ai retenu de ces recherches.",
     photo: "/articles/Recherche/search.jpg",
     content: Recherche,
   },
   {
-    id: 5,
-    title: "Article 5",
+    id: 4,
+    title: "Le Web2Day à Nantes (1)",
     description:
-      "React Meetup, ou comment découvrir de nouvelles choses blablabal",
+      "Le mercredi 1er juin, j'ai assisté à la conférence \"Etre CEO et nomade, rien d'impossible !\" au Web2Day à Nantes.",
+    photo: "/articles/Web2Day/web2day.png",
+    content: CEONomade,
+  },
+  {
+    id: 5,
+    title: "Tookea, un projet Ydays",
+    description:
+      "Tookea est un projet encadré par des Masters en développement web et logiciel à Ynov.",
+    photo: "/articles/tookea/tookea.png",
+    content: Tookea,
   },
 ];
