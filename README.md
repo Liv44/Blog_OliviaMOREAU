@@ -6,9 +6,9 @@
 `npm install` or `yarn install`.
 
 2. Run project
-`npm run start` or `yarn dev`.
+`npm run dev` or `yarn dev`.
 
 3. Go to http://localhost:3000
 
 
-Deployed version on : https://olivia-moreau.vercel.app/
+Deployed version on : https://blog-olivia-moreau.vercel.app/
